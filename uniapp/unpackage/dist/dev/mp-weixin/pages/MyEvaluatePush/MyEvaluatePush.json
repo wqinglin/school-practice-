@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "评论页",
+  "usingComponents": {
+    "uni-rate": "/uni_modules/uni-rate/components/uni-rate/uni-rate",
+    "easy-upload": "/components/easy-upload/easy-upload"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/HM-search/HM-search",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/coupon/coupon",
+    "pages/pay/pay",
+    "pages/orderList/orderList",
+    "pages/MyEvaluatePush/MyEvaluatePush"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#3cc51f",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/shouye.png",
+        "selectedIconPath": "static/images/shouye-2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "static/images/fenlei.png",
+        "selectedIconPath": "static/images/fenlei-2.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/images/wode.png",
+        "selectedIconPath": "static/images/wode-2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

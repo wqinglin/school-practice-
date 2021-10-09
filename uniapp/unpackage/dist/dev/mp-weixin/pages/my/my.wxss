@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+@font-face {
+  font-family: 'iconfont';  /* project id 1639347 */
+  src: url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.eot');
+  src: url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_1639347_9tnhp28j8vi.svg#iconfont') format('svg');
+}
+.iconfont {
+	font-family: 'iconfont' !important;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-fadajing:before {
+	content: '\e601';
+}
+.icon-new:before {
+	content: '\e600';
+}
+.icon-bala:before {
+	content: '\e634';
+}
+.icon-more:before {
+	content: '\e61c';
+}
+.icon-more1:before {
+	content: '\e60c';
+}
+.icon-vip:before {
+	content: '\e677';
+}
+.icon-weinituijian:before {
+	content: '\e647';
+}
+.icon-xiedian:before {
+	content: '\e621';
+}
+.icon-zhizi:before {
+	content: '\e602';
+}
+.icon-saoyisao:before {
+	content: '\e639';
+}
+.icon-xiaoxi:before {
+	content: '\e603';
+}
+.icon-chankan:before {
+	content: '\e661';
+}
+.icon-shoucang:before {
+	content: '\e85e';
+}
+.icon-check:before {
+	content: '\e63d';
+}
+.icon-checked:before {
+	content: '\e64c';
+}
+.icon-jian:before {
+	content: '\e79c';
+}
+.icon-jia:before {
+	content: '\e61d';
+}
+.icon-laji:before {
+	content: '\e91e';
+}
+.icon-setting:before {
+	content: '\e685';
+}
+.icon-daifukuan:before {
+	content: '\e6ca';
+}
+.icon-daifahuo:before {
+	content: '\e6fd';
+}
+.icon-daishouhuo:before {
+	content: '\e63b';
+}
+.icon-daipingjia:before {
+	content: '\e6cb';
+}
+.icon-tuikuan:before {
+	content: '\e708';
+}
+.icon-qianbao:before {
+	content: '\e63f';
+}
+.icon-qiandao:before {
+	content: '\e62e';
+}
+.icon-fukuanma:before {
+	content: '\e7f0';
+}
+.icon-shitu01:before {
+	content: '\e615';
+}
+.icon-shitu02:before {
+	content: '\e605';
+}
+.icon-shaixuan:before {
+	content: '\e66a';
+}
+.icon-sanjiao:before {
+	content: '\e682';
+}
+.icon-share:before {
+	content: '\e620';
+}
+.icon-diandian:before {
+	content: '\e60f';
+}
+.icon-jiangjia:before {
+	content: '\e6b5';
+}
+.icon-guanzhu-off:before {
+	content: '\e606';
+}
+.icon-guanzhu-on:before {
+	content: '\e63e';
+}
+.icon-kefu:before {
+	content: '\e609';
+}
+.icon-cart:before {
+	content: '\e60a';
+}
+.icon-dingwei:before {
+	content: '\e607';
+}
+.icon-dingwei1:before {
+	content: '\e75c';
+}
+.icon-baozheng:before {
+	content: '\e612';
+}
+.icon-guanzhu:before {
+	content: '\e79d';
+}
+.icon-home:before {
+	content: '\e71c';
+}
+.icon-zuji:before {
+	content: '\e6a4';
+}
+.icon-zan:before {
+	content: '\e669';
+}
+.icon-zhuyi:before {
+	content: '\ead1';
+}
+.icon-close1:before {
+	content: '\e64a';
+}
+.icon-success:before {
+	content: '\e979';
+}
+.icon-duihao:before {
+	content: '\e6bf';
+}
+.icon-user:before {
+	content: '\e622';
+}
+.icon-signin:before {
+	content: '\e613';
+}
+.icon-eye-on:before {
+	content: '\e6bb';
+}
+.icon-eye-off:before {
+	content: '\e610';
+}
+.icon-edit1:before {
+	content: '\e617';
+}
+.icon-qian:before {
+	content: '\e611';
+}
+.icon-houtui:before {
+	content: '\e608';
+}
+.icon-sao:before {
+	content: '\e60d';
+}
+.icon-bofang:before {
+	content: '\e745';
+}
+page {
+  background-color: #F6F6F6;
+}
+.user-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 170rpx;
+  line-height: 170rpx;
+  width: 96%;
+  margin: 20rpx auto;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+}
+.user-info image {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}
+.user-info text {
+  font-size: small;
+  font-weight: bold;
+}
+.user-info view {
+  margin-left: auto;
+}
+.user-settting,
+.logout {
+  background-color: #FFFFFF;
+  width: 96%;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  font-size: small;
+}
+.user-order,
+.user-coupon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+.user-order view,
+.user-coupon view {
+  margin-left: auto;
+}
+.logout {
+  margin-top: 30%;
+}
+.logout button {
+  background-color: #49AF4F;
+  color: #FFFFFF;
+  font-size: medium;
+}
+/* 订单信息 */
+.order-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 94%;
+  height: 200rpx;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+  margin: 20rpx auto;
+}
+.order-info .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+.order-info .list .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.order-info .list .icon .iconfont {
+  font-size: 38rpx;
+  color: #333333;
+}
+.order-info .list .icon .num {
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+  padding: 0rpx 6rpx;
+  font-size: 18rpx;
+  color: #fe3b0f;
+  border: 2rpx solid #fe3b0f;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+.order-info .list .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 10rpx;
+}
+.order-info .list .title text {
+  color: #333333;
+  font-size: 24rpx;
+}
+/* 钱包 */
+.wallet-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 94%;
+  height: 200rpx;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+  margin: 20rpx auto;
+}
+.wallet-info .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 25%;
+  height: 100%;
+}
+.wallet-info .list .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.wallet-info .list .icon .iconfont {
+  font-size: 38rpx;
+  color: #fe3b0f;
+}
+.wallet-info .list .icon .number {
+  font-size: 28rpx;
+  color: #212121;
+  font-weight: bold;
+}
+.wallet-info .list .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 10rpx;
+}
+.wallet-info .list .title text {
+  color: #333333;
+  font-size: 24rpx;
+}
+/* 签到，付款码 */
+.integral-payment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  width: 94%;
+  height: 180rpx;
+  margin: 20rpx auto;
+}
+.integral-payment .list {
+  width: 48%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+}
+.integral-payment .list .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  height: 120rpx;
+}
+.integral-payment .list .title .iconfont {
+  font-size: 48rpx;
+  margin-right: 10rpx;
+  font-weight: normal;
+}
+.integral-payment .list .title text {
+  color: #212121;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.integral-payment .list .mess {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+}
+.integral-payment .list .mess text {
+  color: #C0C0C0;
+  font-size: 26rpx;
+}
+

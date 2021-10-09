@@ -1,0 +1,31 @@
+
+.course-title{
+	background-color: #FFFFFF;
+	font-size: small;
+	padding: 24rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.video-icon{
+
+
+
+
+	padding-right:  6rpx;
+}
+.course-status{
+	margin-left: auto;
+}
+.course-status text{
+	font-size: smaller;
+	color: #49AF4F;
+}
+.course-status image{
+	width: 30rpx;
+	height: 30rpx;
+}
+
+

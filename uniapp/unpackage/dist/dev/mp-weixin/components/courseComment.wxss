@@ -1,0 +1,60 @@
+
+.rate{
+	background-color: #F5F5F5;
+	height: 100rpx;
+	width: 96%;
+	margin: 0 auto;
+	border-radius: 20rpx;
+	margin-top: 10rpx;
+	padding: 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 100rpx;
+}
+.z-rate{
+	padding-top: 30rpx;
+	padding-left: 30rpx;
+}
+.comment-tip{
+	padding: 20rpx;
+	font-size: small;
+}
+.course-comment{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-top: 2rpx solid #F5F5F5;
+}
+.comment-left image{
+	width: 80rpx;
+	height: 80rpx;
+	padding: 20rpx;
+}
+.comment-info{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding:20rpx;
+}
+.mobile{
+	font-size: 20rpx;
+	padding-top: 20rpx;
+	margin-left: -20rpx !important;
+}
+.comment-rate{
+	padding-top:18rpx;
+}
+.time{
+	font-size: 18rpx;
+	color: #959595;
+}
+.rate-time{
+	margin-left: auto;
+}
+.comment-content{
+	font-size: 20rpx;
+	width: 640rpx;
+	padding-bottom: 24rpx;
+}
+

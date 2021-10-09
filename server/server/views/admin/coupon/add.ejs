@@ -1,0 +1,59 @@
+<% include ../header %>
+
+<!-- 路径导航 -->
+<ol class="breadcrumb">
+    <li>
+        <a href="#">栏目管理</a>
+    </li>
+    <li class="active">添加栏目</li>
+</ol>
+<!-- 路径导航 END -->
+
+
+<!-- 表单 -->
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-4">
+
+            <form action="/admin/coupon/doadd" class="userForm" method="POST">
+                <div class="input-group">
+                    <span class="input-group-addon">优惠券名称</span>
+                    <input type="text" class="form-control" name="coupon_name">
+                </div> 
+                <div class="input-group">
+                    <span class="input-group-addon">优惠券金额 </span>
+                    <input type="text" class="form-control" name="coupon_fee">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">满多少可用</span>
+                    <input type="text" class="form-control" name="total_fee" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">有效期</span>
+                    <input type="text" class="form-control" name="from_to"  id="lay_date" autocomplete="off">
+                </div>
+
+                <div class="input-group">
+                    <input type="submit">
+                </div>
+            </form>
+
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+<!-- 表单 end -->
+<script src="/assets/laydate/laydate.js"></script>
+<script>
+        laydate.render({
+            elem: '#lay_date',
+            range: true
+        })
+
+</script>
+
+
+<% include ../footer %>

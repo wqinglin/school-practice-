@@ -1,0 +1,177 @@
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 84rpx;
+
+	top: 0rpx;
+
+	left: 0;
+	z-index: 9999
+}
+.swiper {
+	padding: 10rpx;
+}
+.swiper-item image {
+	width: 100%;
+
+	height: 260rpx;
+
+
+
+
+
+
+	/* border-radius: 20rpx; */
+}
+.city {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-left: 4px;
+}
+.input-view {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	background-color: #f8f8f8;
+	height: 30px;
+	border-radius: 15px;
+	padding: 0 15px;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	margin: 7px 0;
+	line-height: 30px;
+}
+.nav-bar-input {
+	height: 30px;
+	line-height: 30px;
+	width: 370rpx;
+	padding: 0 5px;
+	font-size: 14px;
+	background-color: #f8f8f8;
+}
+.con {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	padding: 20rpx 5rpx;
+}
+.course navigator {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid #F1F1F1;
+}
+.course-right image {
+	width: 320rpx;
+	height: 160rpx;
+	border-radius: 20rpx;
+}
+.course-right {
+	width: 60%;
+	padding: 10rpx;
+}
+.course-left {
+	width: 40%;
+	padding: 10rpx;
+}
+.course-title {
+	font-size: 26rpx;
+	font-weight: bold;
+	color: #313131;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+.course-rate {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 50rpx;
+}
+.course-rate view {
+
+
+
+
+
+	padding-top: 6rpx;
+}
+.rate-tip {
+	font-size: 30rpx;
+
+	line-height: 58rpx;
+}
+.study-p {
+	margin-left: 10%;
+	font-size: 20rpx;
+
+	line-height: 58rpx;
+
+
+
+
+
+
+	color: #959595;
+}
+.pro-price {
+	font-weight: bold;
+	color: #fe601a;
+	font-size: 34rpx;
+}
+.ori-price {
+	font-size: 28rpx;
+	color: #959595;
+	text-decoration: line-through;
+	margin-left: 10%;
+}
+.category-box {
+	padding: 20rpx;
+	width: 120%;
+	/*子盒子要足够宽(重要)*/
+	background-color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/* flex-wrap: wrap; 去掉折行*/
+}
+.category-list {
+	width: 33%;
+	margin-top: 20rpx;
+}
+.category-column {
+	width: 100%;
+	margin-top: 20rpx;
+	overflow: hidden;
+}
+.category-imgbox {
+	width: 80rpx;
+	height: 80rpx;
+}
+.category-title {
+	font-size: 24rpx;
+	margin-top: 10rpx;
+}
+

@@ -1,0 +1,121 @@
+
+page{
+	background-color: #F6F6F6;
+}
+.course{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 20rpx;
+	background-color: #FFFFFF;
+}
+.course-left image{
+	width: 300rpx;
+	height: 180rpx;
+	border-radius: 20rpx;
+}
+.course-left{
+	width:50%;
+}
+.course-right{
+	width: 30%;
+	padding: 10rpx;
+}
+.course-title{
+	font-size: 26rpx;
+	font-weight: 340;
+	color: #313131;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical
+}
+.course-tip{
+	font-size: 20rpx;
+	color: #808080;
+	padding-top: 20rpx;
+}
+.course-price{
+	color: #FE601A;
+	margin-left:85% ;
+	padding-top: 10%;
+}
+.coupon{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 64rpx;
+	line-height: 64rpx;
+	background-color: #FFFFFF;
+	margin-top: 20rpx;
+	padding: 20rpx;
+}
+.coupon view{
+	font-size: medium;
+	font-weight: 380;
+}
+.coupon text{
+	margin-left: auto;
+	color: #FE601A;
+	font-size: small;
+	font-weight: bold;
+}
+.pay-type{
+	background-color: #FFFFFF;
+	margin-top: 20rpx;
+}
+.pay-tip{
+	font-size: medium;
+	height: 60rpx;
+	line-height: 60rpx;
+	padding: 20rpx;
+}
+.wx-pay,.zfb-pay{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-top: 2rpx solid #F5F5F5;
+	line-height: 84rpx;
+	height: 84rpx;
+	font-size: small;
+}
+.wx-pay image,.zfb-pay image{
+	width: 50rpx;
+	height: 50rpx;
+	padding: 20rpx;
+}
+.pay-type radio{
+	margin-left: auto;
+}
+.pay-footer{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #FFFFFF;
+	height: 84rpx;
+	line-height: 84rpx;
+	padding: 20rpx;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.pay-footer view{
+	width: 40%;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+}
+.pay-footer text{
+	color: #FE601A;
+	font-size: large;
+	padding-left: 20rpx;
+}
+.pay-footer button{
+	width: 50%;
+	border-radius: 50rpx;
+	background-color: #FE601A;
+	color: #FFFFFF;
+	font-size: medium;
+} 
+

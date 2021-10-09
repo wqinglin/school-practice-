@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "详情页",
+  "usingComponents": {
+    "uni-goods-nav": "/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav",
+    "course-intro": "/components/courseIntro",
+    "course-comment": "/components/courseComment",
+    "course-catalog": "/components/courseCatlog"
+  }
+}

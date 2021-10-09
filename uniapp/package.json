@@ -1,0 +1,10 @@
+{
+    "id": "fh-wx-QRCode-window",
+    "name": "对接微信授权登录二维码窗口",
+    "version": "1.0.0",
+    "description": "将微信授权登录页面封装到一个组件中，通过renderjs实现",
+    "keywords": [
+        "微信授权登录",
+        "二维码"
+    ]
+}

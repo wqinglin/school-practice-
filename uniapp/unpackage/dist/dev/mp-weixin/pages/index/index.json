@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "在线视频课程",
+  "usingComponents": {
+    "uni-nav-bar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "mescroll-body": "/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body",
+    "uni-rate": "/uni_modules/uni-rate/components/uni-rate/uni-rate"
+  }
+}

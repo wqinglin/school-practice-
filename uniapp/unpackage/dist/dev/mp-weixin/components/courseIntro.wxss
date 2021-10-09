@@ -1,0 +1,67 @@
+
+.course-title{
+	font-size: medium;
+	padding: 20rpx;
+	font-weight: 450;
+}
+.study-p{
+	font-size: 24rpx;
+	color: #959595;
+	padding: 20rpx;
+	border-bottom: 2rpx solid #F5F5F5;
+}
+.course-price{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.pro-price{
+	padding: 20rpx;
+}
+.ori-price{
+	text-decoration: line-through;
+	color: #959595;
+	font-size: medium;
+	padding: 20rpx;
+}
+.coupon{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 20rpx;
+	border-bottom: 24rpx  solid #F5F5F5;
+	height: 84rpx;
+	line-height: 84rpx;
+}
+.coupon view{
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #FE601A;
+	width: 50%;
+}
+.coupon button{
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 20rpx;
+	background-color: #FE601A;
+	color: #FFFFFF;
+	margin-top: 26rpx;
+	margin-left: 30%;
+}
+.isGet{
+	background-color: #FFFFFF !important;
+	color: #FE601A !important;
+}
+.intro-tip{
+	border-bottom: 2rpx solid #F5F5F5;
+}
+.course-intro view{
+	padding: 20rpx;
+}
+.rich-text{
+	height: 1800rpx;
+}
+
+

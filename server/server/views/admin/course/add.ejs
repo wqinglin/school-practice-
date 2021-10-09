@@ -1,0 +1,89 @@
+<% include ../header %>
+
+<!-- 引入 富文本编辑器 -->
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<!-- 路径导航 -->
+<ol class="breadcrumb">
+    <li>
+        <a href="#">课程管理</a>
+    </li>
+    <li class="active">发布课程</li>
+</ol>
+<!-- 路径导航 END -->
+
+
+<!-- 发布文章 -->
+<div class="container courseAdd">
+   <div class="row">
+       <form action="/admin/course/doadd" method="POST" enctype="multipart/form-data">
+       <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">课程栏目</span>
+                <select name="categoryId" class="form-control">
+                    <!-- 循环栏目列表 -->
+                    <% data.forEach(function(val){ %>
+                        <option value="<%=val.id%>"><%=val.name%></option>
+                    <% }) %>
+                </select>
+            </div>
+       </div>
+       <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">课程标题</span>
+                <input type="text" class="form-control" name="title">
+            </div>
+       </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-addon">原价价格</span>
+            <input type="text" class="form-control" name="ori_price">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-addon">价格</span>
+            <input type="text" class="form-control" name="price">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-addon">购买量</span>
+            <input type="text" class="form-control" name="readCount">
+        </div>
+    </div>
+    <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">课程封面 </span>
+                <input type="file" class="form-control" name="imgurl">
+            </div>
+       </div>
+        <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon">选择</span>
+                <input type="checkbox" name='is_special' value="1">推荐
+                <input type="checkbox" name='is_on' value="1">上架
+            </div>
+        </div>
+       <div class="col-md-12 content">
+            <textarea name="content" type="text/plain" id="content"></textarea>
+            <!-- <script id="editor" type="text/plain" style="width:800px;height:300px;"></script> -->
+       </div>
+       <div class="col-md-12">
+            <input class="reset" type="reset">
+            <input class="submit" type="submit">
+       </div>
+      
+    </form>
+    </div>
+</div>
+
+<script>
+    // 实例化编辑器
+    var ueditor = UE.getEditor('content');
+</script>
+
+
+<% include ../footer %>

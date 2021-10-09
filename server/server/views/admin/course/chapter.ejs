@@ -1,0 +1,108 @@
+<% include ../header %>
+
+    <!-- 路径导航 -->
+    <ol class="breadcrumb">
+        <li>
+            <a href="#">课程管理</a>
+        </li>
+        <li class="active">添加章节</li>
+    </ol>
+    <!-- 路径导航 END -->
+
+
+    <!-- 发布文章 -->
+    <div class="container courseAdd">
+        <div class="row">
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                        data-toggle="tab">添加章</a>
+                </li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">添加节</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <!-- 添加章表单 -->
+                
+                <div role="tabpanel" class="tab-pane active" id="home">
+
+                    <form onsubmit="return false;" class="frm1">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">章标题</span>
+                            <input type="text" name="catlog_title" class="form-control" class="catlog_title">
+                            <input type="hidden" name="courseId" value="<%=courseId%>">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input class="submit" type="button" value="确认保存" onclick="save1()">
+                    </div>
+                </form>
+                </div>
+                
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <!-- 添加节的表单 -->
+                    <form method="POST" enctype="multipart/form-data" action="/admin/course/saveVideo">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">节标题</span>
+                                <input type="text" name="catlog_title" class="form-control" id="catlog_title">
+                                <input type="hidden" name="courseId" value="<%=courseId%>">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">课程章</span>
+                                <select name="pid" class="form-control">
+                                    <!-- 循环栏目列表 -->
+                                    <% data.forEach(function(val){ %>
+                                        <option value="<%=val.id%>">
+                                            <%=val.catlog_title%>
+                                        </option>
+                                        <% }) %>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">视频上传 </span>
+                                <input type="file" class="form-control" name="video_url">
+                            </div>
+
+
+                            <div class="input-group">
+                                <span class="input-group-addon">是否免费</span>
+                                <input type="radio" name='is_free' value="1">是
+                                <input type="radio" name='is_free' value="0">否
+                            </div>
+
+                            <input class="submit" type="submit" value="确认保存">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+
+        // 实例化编辑器
+
+        function save1() {
+            
+            let fields = $('.frm1').serialize(); //// 拿到表单中所有的 name 的键值。 {catlog_title:'章',courseId:3}
+            //alert(fields);
+            $.post('/admin/course/saveChapter', fields, function (res) {
+                if (res.code == 1) {
+                    alert(res.msg);
+                    location.href = '/admin/course/chapter/' + '<%=courseId%>'
+                }
+            });
+        }
+
+    </script>
+
+
+    <% include ../footer %>

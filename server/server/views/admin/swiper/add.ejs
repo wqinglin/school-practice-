@@ -1,0 +1,50 @@
+<% include ../header %>
+
+
+
+<!-- 路径导航 -->
+<ol class="breadcrumb">
+    <li>
+        <a href="#">轮播图管理</a>
+    </li>
+    <li class="active">添加轮播图</li>
+</ol>
+<!-- 路径导航 END -->
+
+
+<!-- 发布文章 -->
+<div class="container swiperAdd">
+   <div class="row">
+       <form action="/admin/swiper/doadd" method="POST" enctype="multipart/form-data">
+       <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">轮播图标题</span>
+                <input type="text" class="form-control" name="title">
+            </div>
+       </div>
+       <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">轮播图连接</span>
+                <input type="text" class="form-control" name="url">
+            </div>
+       </div>
+       <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">轮播图图像 </span>
+                <input type="file" class="form-control" name="imgurl">
+            </div>
+       </div>
+       <div class="col-md-12 content">
+           
+       </div>
+       <div class="col-md-6">
+            <input class="reset" type="reset">
+       </div>
+       <div class="col-md-6">
+            <input class="submit" type="submit">
+       </div>
+    </form>
+    </div>
+</div>
+
+<% include ../footer %>
